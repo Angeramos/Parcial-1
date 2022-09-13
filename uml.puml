@@ -1,0 +1,11 @@
+@startuml
+class parqueadero
+parqueadero : horario:float 
+parqueadero : disponibilidad:int
+parqueadero : precio():coche
+
+parqueadero o-- coche 
+
+class coche
+coche : tipo_coche 
+@enduml
